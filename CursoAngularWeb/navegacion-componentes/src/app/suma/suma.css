@@ -1,0 +1,236 @@
+/* Estilos específicos para el componente suma */
+#container-info {
+    padding: 80px 150px 80px 150px;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+h3 {
+    color: #00d4ff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+h4 {
+    color: #ffd700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+/* Tarjetas */
+.parametros-card, .operacion-card, .resultado-card, .info-card, .ejemplos-card {
+    background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
+    padding: 2rem;
+    border-radius: 15px;
+    margin: 2rem 0;
+    border: 1px solid #444;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.resultado-card {
+    border: 3px solid #4a9d4a;
+    background: linear-gradient(145deg, #1a2a1a, #2a3a2a);
+}
+
+/* Grid de parámetros */
+.parametros-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.parametro-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+    border-radius: 10px;
+    border: 1px solid #555;
+}
+
+.parametro-label {
+    color: #ccc;
+    font-size: 1.1em;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.parametro-valor {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+}
+
+.primer-numero {
+    color: #4a9dff;
+}
+
+.segundo-numero {
+    color: #ff6b6b;
+}
+
+/* Operación */
+.operacion-display {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.operacion-texto {
+    font-size: 2em;
+    font-family: 'Courier New', monospace;
+    color: #fff;
+    background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 1px solid #555;
+    display: inline-block;
+}
+
+/* Resultado */
+.resultado-display {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.resultado-numero {
+    font-size: 4em;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.resultado-info {
+    margin-top: 1rem;
+}
+
+.resultado-tipo {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Información adicional */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+    border-radius: 8px;
+    border: 1px solid #555;
+}
+
+.info-label {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 0.5rem;
+}
+
+.info-valor {
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Ejemplos de enlaces */
+.ejemplos-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+    justify-content: center;
+}
+
+.ejemplo-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #4a9d4a;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-family: 'Courier New', monospace;
+}
+
+.ejemplo-link:hover {
+    background: #5aad5a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Botones de navegación */
+.navegacion-botones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.nav-button {
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    text-decoration: underline 3px white;
+    background-color: rgb(227, 0, 0);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #container-info {
+        padding: 2rem 1rem;
+    }
+    
+    .parametros-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .ejemplos-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navegacion-botones {
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,58 @@
+/* Estilos específicos para el componente detalle */
+#container-info {
+    padding: 80px 150px 80px 150px;
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #00d4ff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+h4 {
+    color: #ffd700;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+p {
+    font-family: monospace;
+    font-size: 1.3em;
+    margin-top: 15px;
+    color: rgb(185, 185, 185);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+strong {
+    color: #fff;
+    font-weight: bold;
+}
+
+button {
+    background-color: red;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    text-decoration: underline 3px white;
+    background-color: rgb(227, 0, 0);
+    transform: translateY(-2px);
+}

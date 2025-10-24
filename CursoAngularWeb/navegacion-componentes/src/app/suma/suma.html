@@ -1,0 +1,76 @@
+<div id="container-info">
+    <h2>🧮 Calculadora de Suma</h2>
+    
+    <!-- Tarjeta de parámetros recibidos -->
+    <div class="parametros-card">
+        <h3>📥 Parámetros Recibidos</h3>
+        <div class="parametros-grid">
+            <div class="parametro-item">
+                <span class="parametro-label">Primer Número:</span>
+                <span class="parametro-valor primer-numero">{{ primerNumero }}</span>
+            </div>
+            <div class="parametro-item">
+                <span class="parametro-label">Segundo Número:</span>
+                <span class="parametro-valor segundo-numero">{{ segundoNumero }}</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tarjeta de operación -->
+    <div class="operacion-card">
+        <h3>🔢 Operación Realizada</h3>
+        <div class="operacion-display">
+            <span class="operacion-texto">{{ getOperacion() }}</span>
+        </div>
+    </div>
+
+    <!-- Tarjeta de resultado -->
+    <div class="resultado-card" [style.border-color]="getColorResultado()">
+        <h3>🎯 Resultado</h3>
+        <div class="resultado-display">
+            <span class="resultado-numero" [style.color]="getColorResultado()">{{ resultado }}</span>
+            <div class="resultado-info">
+                <span class="resultado-tipo" [style.color]="getColorResultado()">
+                    {{ getTipoResultado() }}
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Información adicional -->
+    <div class="info-card">
+        <h4>ℹ️ Información Adicional</h4>
+        <div class="info-grid">
+            <div class="info-item">
+                <span class="info-label">Suma de:</span>
+                <span class="info-valor">{{ primerNumero }} + {{ segundoNumero }}</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Resultado:</span>
+                <span class="info-valor" [style.color]="getColorResultado()">{{ resultado }}</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Tipo:</span>
+                <span class="info-valor" [style.color]="getColorResultado()">{{ getTipoResultado() }}</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ejemplos de navegación -->
+    <div class="ejemplos-card">
+        <h4>🔗 Ejemplos de URLs</h4>
+        <div class="ejemplos-links">
+            <a routerLink="/suma/5/3" class="ejemplo-link">/suma/5/3</a>
+            <a routerLink="/suma/10/15" class="ejemplo-link">/suma/10/15</a>
+            <a routerLink="/suma/100/200" class="ejemplo-link">/suma/100/200</a>
+            <a routerLink="/suma/7/8" class="ejemplo-link">/suma/7/8</a>
+        </div>
+    </div>
+
+    <!-- Botones de navegación -->
+    <div class="navegacion-botones">
+        <button routerLink="/home" class="nav-button">🏠 Inicio</button>
+        <button routerLink="/directiva" class="nav-button">📋 Directivas</button>
+        <button routerLink="/detalle/1" class="nav-button">🔍 Detalle</button>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div id="container-info">
+    <h2>🔍 Detalle del Elemento</h2>
+    
+    <div style="background: linear-gradient(145deg, #2a2a2a, #1e1e1e); padding: 2rem; border-radius: 15px; margin: 2rem 0; border: 1px solid #444;">
+        <h3 style="color: #00d4ff; margin-bottom: 1rem;">Información del Elemento</h3>
+        
+        <div style="margin-bottom: 1rem;">
+            <strong style="color: #fff;">ID:</strong> 
+            <span style="color: #00d4ff; font-size: 1.2em;">{{ id }}</span>
+        </div>
+        
+        <div style="margin-bottom: 1rem;">
+            <strong style="color: #fff;">Nombre:</strong> 
+            <span style="color: #4a9d4a; font-size: 1.1em;">{{ nombre }}</span>
+        </div>
+        
+        <div style="margin-bottom: 1rem;">
+            <strong style="color: #fff;">Tipo:</strong> 
+            <span style="color: #ff6b6b; font-size: 1.1em;">{{ getTipo() }}</span>
+        </div>
+        
+        <div style="margin-bottom: 1rem;">
+            <strong style="color: #fff;">Descripción:</strong> 
+            <p style="color: #ccc; margin-top: 0.5rem; line-height: 1.6;">{{ getDescripcion() }}</p>
+        </div>
+    </div>
+
+    <div style="background: linear-gradient(145deg, #1e1e1e, #2a2a2a); padding: 1.5rem; border-radius: 10px; margin: 2rem 0; border: 1px solid #444;">
+        <h4 style="color: #ffd700; margin-bottom: 1rem;">📊 Parámetros de Ruta Recibidos</h4>
+        <p style="color: #ccc; margin: 0.5rem 0;"><strong>ID:</strong> {{ id }}</p>
+        <p style="color: #ccc; margin: 0.5rem 0;"><strong>Tipo:</strong> {{ tipo }}</p>
+        <p style="color: #888; font-size: 0.9em; margin-top: 1rem;">
+            💡 Estos parámetros se extraen de la URL usando ActivatedRoute
+        </p>
+    </div>
+
+    <div style="margin-top: 30px; text-align: center;">
+        <button routerLink="/home" style="margin-right: 20px;">🏠 Inicio</button>
+        <button routerLink="/directiva">📋 Directivas</button>
+    </div>
+</div>

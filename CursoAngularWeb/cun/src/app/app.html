@@ -1,0 +1,21 @@
+<!-- Ejercicio de directivas y data binding -->
+<div style="margin-top: 2rem; padding: 2rem; border-top: 2px solid #ccc;">
+  <h2>🌍 Ejercicio de Directivas</h2>
+  
+  <!-- 1. Mostrar cada ciudad con *ngFor -->
+  <div *ngFor="let ciudad of ciudades" style="margin: 1rem 0; padding: 1rem; border: 1px solid #ddd; border-radius: 5px;">
+    <p><strong>País:</strong> {{ ciudad.pais }}</p>
+    <p><strong>Ciudad:</strong> {{ ciudad.ciudad }}</p>
+    <p><strong>Habitantes:</strong> {{ ciudad.habitantes | number }}</p>
+  </div>
+
+  <!-- 2. Mostrar h2 condicionalmente con *ngIf -->
+  <h2 *ngIf="ciudades.length > 5" style="color: green; margin-top: 2rem;">✅ Tengo más de 5 elementos</h2>
+
+  <!-- 3. Mostrar número de elementos con colores condicionales -->
+  <h5 [ngClass]="ciudades.length < 5 ? 'color-azul' : 'color-verde'" style="margin-top: 1rem; font-size: 1.2rem;">
+    📊 Número de elementos: {{ ciudades.length }}
+  </h5>
+</div>
+
+<router-outlet />
